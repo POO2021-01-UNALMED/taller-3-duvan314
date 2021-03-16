@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class Control {
 
-    public TV tv;
+    private  TV tv;
 
 
     public void turnOn(){ this.tv.turnOn(); }
@@ -25,6 +25,10 @@ public class Control {
         this.tv = tv;
     }
 
+    public void enlazar(TV tv) {
+        this.tv = tv;
+        this.tv.setControl(this);
+    }
 
 
 
