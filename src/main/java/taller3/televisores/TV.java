@@ -90,28 +90,28 @@ public class TV {
 
     public void turnOff() {
         this.estado = false;
-        inicial();
+        this.inicial();
     }
 
     public void canalUp() {
         if (canal < 120 && estado){
-            canal += 1;
+            this.canal += 1;
         }
     }
     public void canalDown() {
         if (canal > 1 && estado){
-            canal -= 1;
+            this.canal -= 1;
         }
     }
 
     public void volumenUp() {
         if (volumen <7 && estado){
-            volumen += 1;
+            this.volumen += 1;
         }
     }
     public void volumenDown() {
         if (volumen >0  && estado ){
-            volumen -= 1;
+            this.volumen -= 1;
         }
     }
 
